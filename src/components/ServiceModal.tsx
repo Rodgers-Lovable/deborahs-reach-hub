@@ -101,12 +101,12 @@ export const ServiceModal = ({ service, isOpen, onClose, onBookSession }: Servic
                       <span>{service.ageRange}</span>
                     </div>
                   )}
-                  {service.duration && (
+                  {/* {service.duration && (
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-primary" />
                       <span>{service.duration}</span>
                     </div>
-                  )}
+                  )} */}
                 </div>
 
                 {/* Long description */}
@@ -134,16 +134,17 @@ export const ServiceModal = ({ service, isOpen, onClose, onBookSession }: Servic
                 <div className="flex flex-col sm:flex-row gap-3 pt-4">
                   <Button
                     onClick={onBookSession}
-                    className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+                    className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground py-3"
                     size="lg"
                   >
                     <Phone className="w-4 h-4 mr-2" />
                     Book a Consultation
                   </Button>
+
                   <Button
                     onClick={handleWhatsApp}
                     variant="outline"
-                    className="flex-1"
+                    className="flex-1  py-3"
                     size="lg"
                   >
                     <MessageCircle className="w-4 h-4 mr-2" />
