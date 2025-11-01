@@ -90,7 +90,7 @@ export const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden mt-4 pb-4 border-t border-border pt-4"
+            className="md:hidden w-full p-4 bg-white"
           >
             <nav className="flex flex-col gap-3" aria-label="Mobile navigation">
               {navItems.map((item) => (
