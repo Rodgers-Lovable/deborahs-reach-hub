@@ -31,7 +31,7 @@ export const Hero = () => {
         <img
           src={heroImage}
           alt="Bright, welcoming classroom with colorful learning materials and educational toys"
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
       </div>

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { config } from "@/config";
+import WhatsappIcon from '@/assets/whatsapp.webp';
 
 export const WhatsAppFloat = () => {
   const handleClick = () => {
@@ -22,11 +23,11 @@ export const WhatsAppFloat = () => {
       transition={{ delay: 1, duration: 0.3 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 shadow-lg focus-ring"
+      className="fixed bottom-6 right-6 z-50 text-white rounded-full focus-ring"
       aria-label="Contact via WhatsApp"
     >
-      <MessageCircle className="w-6 h-6" aria-hidden="true" />
-      <span className="absolute -top-1 -right-1 w-3 h-3 bg-destructive rounded-full animate-pulse" />
+      <img src={WhatsappIcon} alt={`https://wa.me/${config.whatsappNumber.replace(/\D/g, "")}`} className="w-[60px] md:w-[70px]" />
+      {/* <span className="absolute -top-1 -right-1 w-3 h-3 bg-destructive rounded-full animate-pulse" /> */}
     </motion.button>
   );
 };

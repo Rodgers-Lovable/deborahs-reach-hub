@@ -45,7 +45,7 @@ export const About = () => {
             >
               <p className="text-lg text-foreground/90 leading-relaxed">
                 Hello! I'm <strong>Deborah Nyachoti</strong>, a certified special education teacher
-                with over 8 years of experience supporting children with diverse learning needs. My
+                with immense experience supporting children with diverse learning needs. My
                 journey in special education has taught me that every child has unique strengths
                 waiting to be discovered.
               </p>
