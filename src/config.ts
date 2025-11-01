@@ -1,11 +1,19 @@
 export const config = {
   // Contact Information
+  developer: {
+    name: "Mawira",
+    email: "brianmawira2@gmail.com",
+    phone: "+254712413243",
+    website: "https://mawirab.com",
+  },
+
+  // Contact Information
   teacherName: "Deborah Nyachoti",
   email: "deborahnyachoti27@gmail.com",
   phone: "+254757869633",
-  whatsappNumber:  "+254757869633",
+  whatsappNumber: "+254757869633",
   location: "Nairobi, Kenya",
-  
+
   // EmailJS Configuration
   // Get these from https://www.emailjs.com/
   emailjs: {
@@ -13,14 +21,14 @@ export const config = {
     templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
     publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
   },
-  
+
   // Social Media & Links
   social: {
     linkedin: "",
     facebook: "",
     instagram: "",
   },
-  
+
   // Business Info
   yearsOfExperience: 3,
   servingArea: "Nairobi, Kenya",
