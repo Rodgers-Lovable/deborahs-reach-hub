@@ -4,6 +4,20 @@ import { config } from "@/config";
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const handleClick = () => {
+    const message = encodeURIComponent(
+      "Hi! I found you through Deborah's website and I'm interested in a website similar to hers."
+    );
+    window.open(
+      `https://wa.me/${config.developer.phone.replace(
+        /\D/g,
+        ""
+      )}?text=${message}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   return (
     <footer className="bg-foreground/5 border-t border-border py-8">
       <div className="container mx-auto px-4">
@@ -18,12 +32,12 @@ export const Footer = () => {
             <div className="text-center md:text-left">
               <p className="text-sm text-muted-foreground">
                 Developed and Maintained by{" "}
-                <a
-                  href={`${config.developer.website}`}
+                <button
+                  onClick={handleClick}
                   className="text-primary"
                 >
                   {config.developer.name}
-                </a>
+                </button>
               </p>
             </div>
 
